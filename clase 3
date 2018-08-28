@@ -1,0 +1,20 @@
+scope: cada funcion tiene su porcion de stac y no lo comparten.
+
+stac: zona de memoria donde se reserva espacio para las funciones( no se comparten funciones en el stac si no se pasa la direccion de memoria de una variable (*) ) una vez que la funcion fue usada la memoria reservada se libera.
+
+
+prototipo: verifica si la funcion recibe los parametros que pide
+
+
+PUNTERO 
+
+int edad;//Variable
+int* pEdad;//Puntero a entero 
+edad=5;//valor de edad
+pEdad=&edad;//en la direccion de memoria de pEdad le guardo el valor de edad
+*pEdad=8;//Guarda en la direccion de memoria de pEdad(que tenia un 5) un 8
+
+printf("%d",edad); muestra 5
+printf("%d",*pEdad); muestra 8
+
+

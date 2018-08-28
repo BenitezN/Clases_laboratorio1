@@ -1,0 +1,14 @@
+CLASE I LABORATORIO
+
+%d %s %f : comodin o mascara que es remplazada por el tipo de variable elegido
+%p:tipo hexadecimal
+
+scanf:pide un dato de algun tipo
+{
+	&valor:accedo la direccion de memoria donde se encuentra el dato de la variable
+	valor:accedo al valor de una variable
+}
+
+los que no son array hacen referencia a su valor por eso necesito un &
+los que son array ya apuntan a una direccion de memoria
+

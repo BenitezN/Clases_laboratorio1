@@ -1,0 +1,22 @@
+lower camel case (numeroUno): formato para declarar variables.
+
+clonar git en linux
+git clone "ruta del repositorio" en la carpeta donde quiero clonarla
+
+git status: para saber si es un repositorio de git
+
+git add -A: agrega todo el contenido nuevo que esta en el repositorio
+
+git commit -m : agregar commit
+
+git push: guardar cambios en el repositorio(pide usuario y contra)
+
+git init: crear repositorio
+
+git log: ver commits del repositorio
+
+
+
+ 
+
+
