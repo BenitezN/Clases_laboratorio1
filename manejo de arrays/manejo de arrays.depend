@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1536262447 source:c:\users\nico\desktop\manejo de arrays\arrays.c
+	<stdio.h>
+	<stdlib.h>
+	"arrays.h"
+
+1536260440 
+
+1536260450 c:\users\nico\desktop\manejo de arrays\arrays.h
+
+1536260440 source:c:\users\nico\desktop\manejo de arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arrays.h"
+
+1536271079 source:/media/alumno/980A91B70A91933C/manejo de arrays/arrays.c
+	<stdio.h>
+	<stdlib.h>
+	"arrays.h"
+
+1536272269 /media/alumno/980A91B70A91933C/manejo de arrays/arrays.h
+
+1536271531 source:/media/alumno/980A91B70A91933C/manejo de arrays/main.c
+	<stdio.h>
+	<stdlib.h>
+	"arrays.h"
+
