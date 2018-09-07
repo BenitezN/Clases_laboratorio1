@@ -59,17 +59,18 @@ int array_ordenar(int* pArray, int limite, int orden)
     int retorno=-1;
     int j;
     int indiceMinimo;
-    int auxiliar;
+   // int auxiliar;
     if(pArray != NULL && limite > 0)
     {
         for(j=0;j<limite;j++)
         {
             array_minimoDesde(pArray,limite,j,&indiceMinimo);
             //SWAP
-            auxiliar= pArray[j];
-            pArray[j]=pArray[indiceMinimo];
-            pArray[indiceMinimo]=auxiliar;
+            //auxiliar= pArray[j];
+            //pArray[j]=pArray[indiceMinimo];
+            //pArray[indiceMinimo]=auxiliar;
             //SWAP
+            array_swap(&pArray[j],&pArray[indiceMinimo]);
         }
         retorno =  0;
     }
@@ -98,5 +99,36 @@ int array_minimoDesde(int* pArray, int limite, int desde, int *pMinimo)
     return retorno;
 }
 
+void array_swap(int *elementoA, int *elementoB)
+{
+    int auxiliar;
+    auxiliar=*elementoA;// copiar valor de la variable
+    *elementoA=*elementoB;
+    *elementoB=auxiliar;
 
+}
 
+int array_ordenarConBurbujeo(int* pArray, int limite, int orden)
+{
+    int retorno=-1;
+    int j;
+    int flagSwap;
+    if(pArray != NULL && limite > 0)
+    {
+        do
+        {
+            flagSwap=0;
+            for(j=0;j<limite-1;j++)
+            {
+                if( (orden == 0 && pArray[j] < pArray[j+1]) || (orden == 1 && pArray[j] > pArray[j+1]) )
+                {
+                    flagSwap=1;
+                    array_swap(&pArray[j],&pArray[j+1]);
+                }
+            }
+        }while(flagSwap);
+        retorno =  0;
+    }
+    return retorno;
+
+}

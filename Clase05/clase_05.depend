@@ -53,7 +53,7 @@
 
 1536270557 /home/alumno/Descargas/Clases_laboratorio1/Clase05/utn.h
 
-1536275099 /home/alumno/Descargas/Clases_laboratorio1/Clase05/array.h
+1536280662 /home/alumno/Descargas/Clases_laboratorio1/Clase05/array.h
 
 1536279351 source:/home/alumno/Descargas/Clases_laboratorio1/Clase05/utn.c
 	<stdio_ext.h>
@@ -61,7 +61,7 @@
 	"utn.h"
 	"array.h"
 
-1536279454 source:/home/alumno/Descargas/Clases_laboratorio1/Clase05/array.c
+1536280653 source:/home/alumno/Descargas/Clases_laboratorio1/Clase05/array.c
 	<stdio.h>
 	<stdlib.h>
 	"array.h"
