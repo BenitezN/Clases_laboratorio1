@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1536709362 source:/home/alumno/Descargas/Clases_laboratorio1/ejemplo de arrays/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+
