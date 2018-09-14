@@ -6,6 +6,11 @@
 #define CANTIDAD 5
 #include "arrays.h"
 
+/**
+* \brief Carga el array con valores
+* \param notas[] El array a recorrer
+* \param tam EL tamaño del array
+*/
 void array_cargar(int notas[],int tam)
 {
     int i;
@@ -20,6 +25,11 @@ void array_cargar(int notas[],int tam)
     }
 }
 
+/**
+* \brief Muestra el contenido del array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+*/
 void array_mostrar(int notas[],int tam)
 {
     int i;
@@ -29,6 +39,12 @@ void array_mostrar(int notas[],int tam)
     }
 }
 
+/**
+* \brief Busca el numero mayor en un array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \return Retorna el numero mayor
+*/
 int array_buscarMayor(int notas[],int tam)
 {
     int i;
@@ -43,6 +59,12 @@ int array_buscarMayor(int notas[],int tam)
     return mayor;
 }
 
+/**
+* \brief Busca el numero menor en un array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \return Retorna el numero menor
+*/
 int array_buscarMenor(int notas[],int tam)
 {
     int i;
@@ -57,6 +79,12 @@ int array_buscarMenor(int notas[],int tam)
     return menor;
 }
 
+/**
+* \brief Busca la cantidad de pares encontrados en un array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \return Retorna la cantidad de pares obtenidos
+*/
 int array_buscarCantidadDePares(int notas[],int tam)
 {
     int i;
@@ -71,7 +99,13 @@ int array_buscarCantidadDePares(int notas[],int tam)
     return par;
 }
 
-int retornarTotal(int notas[],int tam)
+/**
+* \brief Calcula la suma total del array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \return Retorna la suma total del array
+*/
+int array_retornarTotal(int notas[],int tam)
 {
     int suma=0;
     int i;
@@ -82,15 +116,26 @@ int retornarTotal(int notas[],int tam)
     return suma;
 }
 
+/**
+* \brief Calcula la promedio total del array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \return Retorna la promedio total del array
+*/
 int array_promedio(int notas[],int tam)
 {
     float promedio;
     int suma;
-    suma=retornarTotal(notas,tam);
+    suma=array_retornarTotal(notas,tam);
     promedio=suma/tam;
     return promedio;
 }
 
+/**
+* \brief Muestra informacion del array(Suma de valores,promedio,mayor,menor,etc)
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+*/
 void array_mostrarInformacion(int notas[],int tam)
 {
     int mayor;
@@ -99,7 +144,7 @@ void array_mostrarInformacion(int notas[],int tam)
     int suma;
     float promedio;
 
-    suma=retornarTotal(notas,tam);
+    suma=array_retornarTotal(notas,tam);
     promedio=array_promedio(notas,tam);
     mayor=array_buscarMayor(notas,tam);
     menor=array_buscarMenor(notas,tam);
@@ -112,7 +157,15 @@ void array_mostrarInformacion(int notas[],int tam)
     printf("\nLa cantidad de pares es: %d", par);
 }
 
-int retornarCantidadEntreNotas(int notas[],int tam,int limInferior,int limSuperior)
+/**
+* \brief Busca la cantidad de ingresos entre limites establecidos en un array
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+* \param limInferior Limite inferior para la busqueda
+* \param limSuperior Limite superior para la busqueda
+* \return Retorna la cantidad de ingresos
+*/
+int array_retornarCantidadEntreNotas(int notas[],int tam,int limInferior,int limSuperior)
 {
     int i;
     int cantidadEntreNotas=0;
@@ -126,14 +179,19 @@ int retornarCantidadEntreNotas(int notas[],int tam,int limInferior,int limSuperi
     return cantidadEntreNotas;
 }
 
+/**
+* \brief Muestra cantidad de calificaciones aprobadas,desaprobadas y sin instancia de final
+* \param notas[] El array a recorrer
+* \param tam El tamaño del array
+*/
 void calificacionesFinales(int notas[],int tam)
 {
    int aprobado;
    int desaprobado;
    int sinFinal;
-   aprobado=retornarCantidadEntreNotas(notas,tam,4,7);
-   desaprobado=retornarCantidadEntreNotas(notas,tam,1,3);
-   sinFinal=retornarCantidadEntreNotas(notas,tam,8,10);
+   aprobado=array_retornarCantidadEntreNotas(notas,tam,4,7);
+   desaprobado=array_retornarCantidadEntreNotas(notas,tam,1,3);
+   sinFinal=array_retornarCantidadEntreNotas(notas,tam,8,10);
 
    printf("\nCantidad de aprobados: %d", aprobado);
    printf("\nCantidad de desaprobados: %d", desaprobado);
