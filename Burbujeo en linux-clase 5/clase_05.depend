@@ -66,3 +66,19 @@
 	<stdlib.h>
 	"array.h"
 
+1537039122 source:/home/nicolas/Documentos/clases_laboratorio1/Burbujeo en linux-clase 5/main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"array.h"
+
+1537039122 /home/nicolas/Documentos/clases_laboratorio1/Burbujeo en linux-clase 5/utn.h
+
+1537041176 /home/nicolas/Documentos/clases_laboratorio1/Burbujeo en linux-clase 5/array.h
+
+1537039122 source:/home/nicolas/Documentos/clases_laboratorio1/Burbujeo en linux-clase 5/utn.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"utn.h"
+	"array.h"
+

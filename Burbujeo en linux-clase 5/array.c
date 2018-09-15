@@ -5,6 +5,12 @@
 #define true 1
 #define DATO_INVALIDO -1
 
+/**
+* \brief Muestra valor,direccion de memoria e indice de un array
+* \param pArray puntero al array para recorrer
+* \param limite EL tamaño del array
+*/
+
 void array_mostrar(int* pArray, int limite)
 {
     int i;
@@ -15,6 +21,13 @@ void array_mostrar(int* pArray, int limite)
     }
 }
 
+/**
+* \brief Buscar el numero maximo de un array
+* \param pArray puntero al array para recorrer
+* \param limite EL tamaño del array
+* \param pMaximo puntero que guarda el valor maximo del array en el stack
+* \return Retorna -1 si no logro hacer nada, -2 si no logro calcular en el array y 0 si esta todo ok
+*/
 int calcularMaximoArray(int* pArray, int limite, int* pMaximo)
 {
     int retorno=-1;
@@ -54,6 +67,12 @@ int calcularMaximoArray(int* pArray, int limite, int* pMaximo)
     return retorno;
 }
 
+/**
+* \brief Ordena un array de minimo a maximo
+* \param pArray puntero al array para recorrer
+* \param limite EL tamaño del array
+* \return Retorna -1 si no logro hacer nada y 0 si logro ordenar
+*/
 int array_ordenar(int* pArray, int limite, int orden)
 {
     int retorno=-1;
@@ -99,6 +118,11 @@ int array_minimoDesde(int* pArray, int limite, int desde, int *pMinimo)
     return retorno;
 }
 
+/**
+* \brief Swapea los valores del array
+* \param elementoA el primer valor del array
+* \param elementoB el valor contiguo del array
+*/
 void array_swap(int *elementoA, int *elementoB)
 {
     int auxiliar;
