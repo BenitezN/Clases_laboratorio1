@@ -48,18 +48,14 @@
 int main()
 {
     int libre;
+    Producto arrayProductos[CANTIDAD_PRODUCTOS];
 
-    eProducto arrayProductos[CANTIDAD_PRODUCTOS];
     producto_init(arrayProductos,CANTIDAD_PRODUCTOS,1);
-
     producto_altaProducto(arrayProductos,CANTIDAD_PRODUCTOS);
-    //printf("\n---%s",arrayProductos[0].nombre);
+
+    printf("\n---%s",arrayProductos[0].nombre);
 
     producto_mostrar(arrayProductos,CANTIDAD_PRODUCTOS);
-
-    lugarLibre(arrayProductos,CANTIDAD_PRODUCTOS);
-
-    printf("\nEl lugar libre es %d",libre);
 
     return 0;
 }

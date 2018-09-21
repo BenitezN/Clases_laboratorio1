@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1537488750 source:/home/alumno/Descargas/repaso parcial/funciones.c
+
+1537488739 source:/home/alumno/Descargas/repaso parcial/main.c
+	<stdio.h>
+	<stdlib.h>
+

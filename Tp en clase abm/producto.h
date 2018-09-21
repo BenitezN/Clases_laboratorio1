@@ -6,10 +6,12 @@ typedef struct
     char nombre[50];
     char descripcion[200];
     float precio;
+    int id;
     int isEmpty;
 }eProducto;
 
-int producto_altaProducto(eProducto arrayProducto[],int len,int indice);
+int producto_altaProducto(eProducto arrayProducto[],int len);
 int producto_mostrar(eProducto arrayProducto[],int len);
 int producto_init(eProducto arrayProducto[],int len,int valor);
-int producto_lugarLibre(eProducto arrayProducto[],int len, int* indice);
+int producto_lugarLibre(eProducto arrayProducto[],int len);
+

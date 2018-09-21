@@ -42,3 +42,28 @@
 	<ctype.h>
 	"utn.h"
 
+1537480302 source:/home/alumno/Descargas/clases_laboratorio1/Tp en clase abm/utn.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+
+1537480302 /home/alumno/Descargas/clases_laboratorio1/Tp en clase abm/utn.h
+
+1537487749 source:/home/alumno/Descargas/clases_laboratorio1/Tp en clase abm/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"producto.h"
+
+1537484706 /home/alumno/Descargas/clases_laboratorio1/Tp en clase abm/producto.h
+
+1537487820 source:/home/alumno/Descargas/clases_laboratorio1/Tp en clase abm/producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"producto.h"
+
